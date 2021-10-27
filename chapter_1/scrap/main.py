@@ -76,4 +76,4 @@ async def scrap(url: str):
         body = await call_api(url)
         return parse_opengraph(body)
     except Exception as e:
-        raise UnicornException(status=400, code=-20000, message=str(e))
+        raise UnicornException(status=400, code=-20000, message=str(e)) # 테스트
